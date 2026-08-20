@@ -1,11 +1,11 @@
-# Real-Time Gender Detection System Using Machine Learning
+# Satellite Imagery-Based Poverty Classification
 
 ## Project Description
-This project develops a real-time gender classification system using computer vision and machine learning[cite: 2]. The system detects faces from a live webcam stream using OpenCV and classifies them as 'Male' or 'Female' using a `RandomForestClassifier`[cite: 2]. I built this project in a Google Colab environment, integrating JavaScript and Python to enable live video processing directly in the browser[cite: 2].
+This project leverages deep learning and computer vision to classify poverty levels in Bolivia using satellite imagery. The system categorizes regions into three distinct classes: Low Poverty, Medium Poverty, and High Poverty. Built with TensorFlow and Keras, the project utilizes the EfficientNetB0 architecture for robust image classification and includes comprehensive model evaluation metrics.
 
 ## Key Features & Achievements
-* Trained a scikit-learn Random Forest Classifier using the `genderdetectionface` dataset from Kaggle, achieving an 86.76% accuracy[cite: 2].
-* Implemented an image preprocessing pipeline using OpenCV (`cv2`) for grayscale conversion, resizing to 64x64, and flattening[cite: 2].
-* Integrated Haar Cascade (`haarcascade_frontalface_default.xml`) for real-time facial detection from live video feeds[cite: 2].
-* Accessed the browser's webcam by writing JavaScript code in Google Colab and processed live frames through a Python backend using base64 encoding and decoding[cite: 2].
-* Created dynamic visual feedback to draw bounding boxes and display the model's prediction confidence percentages on live video frames[cite: 2].
+* **Dataset Processing:** Automated the downloading and processing of the `poverty-bolivia-satellite-images-dataset` from Kaggle.
+* **Deep Learning Architecture:** Implemented transfer learning using the `EfficientNetB0` model tailored for 224x224 image inputs.
+* **Optimized Training Pipeline:** Configured a training pipeline with a batch size of 32, learning rate of 0.001, and integrated advanced callbacks like `EarlyStopping`, `ReduceLROnPlateau`, and `ModelCheckpoint` to prevent overfitting.
+* **Model Evaluation:** Utilized `scikit-learn` to generate detailed classification reports and confusion matrices for thorough performance analysis.
+* **Data Visualization:** Integrated `matplotlib` and `seaborn` for clear visual representation of the dataset and training metrics.
